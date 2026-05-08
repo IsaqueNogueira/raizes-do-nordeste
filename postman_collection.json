@@ -324,6 +324,53 @@
         }
       },
       "response": []
+    },
+    {
+      "name": "15 - Criar Produto 2",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "16 - Adicionar Estoque Produto 2",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"produtoId\": \"69fd36bc0567e4cd8a5edc22\",\n  \"unidadeId\": \"69fd2aeca239238a92d37553\",\n  \"tipo\": \"ENTRADA\",\n  \"quantidade\": 30\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/estoque/movimentacao",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "estoque",
+            "movimentacao"
+          ]
+        }
+      },
+      "response": []
     }
   ],
   "event": [
