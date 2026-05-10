@@ -223,7 +223,7 @@
       "response": []
     },
     {
-      "name": "12 - Pagamento Recusado (valor alto)",
+      "name": "12 - Pagamento (PIX)",
       "request": {
         "auth": {
           "type": "bearer",
@@ -239,7 +239,7 @@
         "header": [],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"unidadeId\": \"69fd2aeca239238a92d37553\",\n  \"canalPedido\": \"WEB\",\n  \"itens\": [\n    {\n      \"produtoId\": \"69fd2b27a239238a92d37554\",\n      \"quantidade\": 35\n    }\n  ],\n  \"formaPagamento\": \"CARTAO\"\n}",
+          "raw": "{\n  \"unidadeId\": \"69fd2aeca239238a92d37553\",\n  \"canalPedido\": \"APP\",\n  \"itens\": [\n    {\n      \"produtoId\": \"69fd2b27a239238a92d37554\",\n      \"quantidade\": 1\n    }\n  ],\n  \"formaPagamento\": \"PIX\"\n}",
           "options": {
             "raw": {
               "language": "json"
