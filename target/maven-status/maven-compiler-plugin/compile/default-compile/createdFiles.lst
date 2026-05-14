@@ -9,6 +9,7 @@ com/raizesdonordeste/application/dto/RegisterRequest.class
 com/raizesdonordeste/api/exception/GlobalExceptionHandler.class
 com/raizesdonordeste/application/service/AuthService.class
 com/raizesdonordeste/application/dto/ErroResponse.class
+com/raizesdonordeste/infrastructure/security/SwaggerConfig.class
 com/raizesdonordeste/domain/model/Fidelidade$HistoricoPontos.class
 com/raizesdonordeste/application/dto/LoginRequest.class
 com/raizesdonordeste/application/dto/MovimentacaoEstoqueRequest.class

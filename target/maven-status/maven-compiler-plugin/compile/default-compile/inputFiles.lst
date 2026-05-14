@@ -32,4 +32,5 @@
 /Users/isaque/Desktop/raizes-do-nordeste/src/main/java/com/raizesdonordeste/infrastructure/security/JwtFilter.java
 /Users/isaque/Desktop/raizes-do-nordeste/src/main/java/com/raizesdonordeste/infrastructure/security/JwtUtil.java
 /Users/isaque/Desktop/raizes-do-nordeste/src/main/java/com/raizesdonordeste/infrastructure/security/SecurityConfig.java
+/Users/isaque/Desktop/raizes-do-nordeste/src/main/java/com/raizesdonordeste/infrastructure/security/SwaggerConfig.java
 /Users/isaque/Desktop/raizes-do-nordeste/src/main/java/com/raizesdonordeste/raizes_do_nordeste/RaizesDoNordesteApplication.java

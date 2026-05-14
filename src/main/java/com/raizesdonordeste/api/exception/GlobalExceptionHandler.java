@@ -37,6 +37,22 @@ public class GlobalExceptionHandler {
         return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(erro);
     }
 
+    @ExceptionHandler(org.springframework.http.converter.HttpMessageNotReadableException.class)
+    public ResponseEntity<ErroResponse> handleMessageNotReadable(
+        org.springframework.http.converter.HttpMessageNotReadableException ex,
+        HttpServletRequest request) {
+
+        ErroResponse erro = new ErroResponse(
+            "CAMPO_INVALIDO",
+            "Valor inválido para um ou mais campos. Verifique os valores aceitos.",
+            List.of(),
+            LocalDateTime.now(),
+            request.getRequestURI()
+        );
+
+        return ResponseEntity.status(HttpStatus.UNPROCESSABLE_ENTITY).body(erro);
+   }
+
     @ExceptionHandler(RuntimeException.class)
     public ResponseEntity<ErroResponse> handleRuntime(
             RuntimeException ex,
